@@ -1,7 +1,5 @@
 package ProjetoNegocio;
 
-import java.util.Scanner;
-
 public class Paciente extends Pessoa {
 	
 	private String carteirinha;

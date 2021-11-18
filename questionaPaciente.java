@@ -5,16 +5,7 @@ import java.util.Scanner;
 public class questionaPaciente extends Paciente{
 	
 	Scanner resposta = new Scanner(System.in);
-	
 	Paciente  p1 = new Paciente();
-	
-
-	void inicio () throws InterruptedException {
-	System.out.println("Olá \n 91% das pessoas com COVID apresentam sintomas. "
-			+ " de acordo com isso, indicaremos o melhor curso de ação para você. "
-			+ "vamos começar ? ");	
-	        Thread.sleep(1000);	
-	}
 	
 	void pergunta1 () {
 		int pgt1;
@@ -24,10 +15,30 @@ public class questionaPaciente extends Paciente{
 	
 	void pergunta2 () {
 		int pgt2;
-		System.out.println("Você está/ esteve com febre nos últimos 15 dias  ?\n  escolha 1 - SIM | 2 - NÃO");
+		System.out.println("Você está ou esteve com dor de cabeça ? \n  escolha 1 - SIM | 2 - NÃO");
 		pgt2 = resposta.nextInt();
-	
 	}
-
 	
+	void pergunta3() {
+		int pgt3;
+		System.out.println("Você está ou esteve com Febre ?  \n escolha 1 - SIM | 2 - NÃO");
+		pgt3 = resposta.nextInt();
+	} 
+	void pergunta4() {
+		int pgt4;
+		System.out.println("Você está ou esteve com Tosse ? \n escolha 1 - SIM | 2 - NÃO");
+		pgt4 = resposta.nextInt();
+		
+		if(pgt4 == 1) {
+		System.out.println("Sua tosse é seca ou carregada ?");
+		int tpTosse = resposta.nextInt();
+	 }
+	 }
+	void pergunta5() {
+		int pgt5;
+		System.out.println("Você está ou esteve com Falta de ar ? \n escolha 1 - SIM | 2 - NÃO");
+		pgt5 = resposta.nextInt();
+	}
+    
+    
 }
