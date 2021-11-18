@@ -10,7 +10,6 @@ public class questionaPaciente extends Paciente{
 	
 
 	void inicio () throws InterruptedException {
-	System.out.println(p1.getNome());
 	System.out.println("Olá \n 91% das pessoas com COVID apresentam sintomas. "
 			+ " de acordo com isso, indicaremos o melhor curso de ação para você. "
 			+ "vamos começar ? ");	
